@@ -40,16 +40,15 @@ the admin panel. To access the admin panel: http://localhost:8000/admin/
 
 ## Database
 
-As it won't be uploaded in production and because it was a techinal challenge,
-I didn't want to spend time dealing with database configs and I used the 
-default database system that Django provides: SQLite. But, for bigger 
-applications that will be put in production, we need to chose a more robust 
-system and make sure that the databases credentials will be stored in safety
-places like the operating system environment variables. 
+As it won't be uploaded in production, I didn't want to spend time dealing with 
+database configs and I used the default database system that Django provides: 
+SQLite. But, for bigger applications that will be put in production, we need 
+to chose a more robust system and make sure that the databases credentials 
+will be stored in safety places like the operating system environment variables. 
 
 ## Tests
 
-For this technical challenge, some unit tests were written to make sure that 
+For this project, some unit tests were written to make sure that 
 everything is working properly. They're in the file tests.py and they can be 
 executed with: python manage.py test
 
