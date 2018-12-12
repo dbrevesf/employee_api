@@ -9,7 +9,7 @@ This project is a web application composed by an API and an Administrator panel.
 
 ## API
 
-The only endpoint of this API is /employee. So, through the
+The only endpoint of this API is ```/employee```. So, through the
 Django Rest Framework this endpoint was developed basically through the 
 creation of a model, a serializer and the viewset. Viewsets are a handy class 
 in Django Rest Framework that makes the creation of an API very easy. If we
@@ -21,11 +21,11 @@ like maximum length, unique condition, etc., will be verified by the viewset,
 saving us a lot of work writing verifications within the HTTP methods. 
 Finally, our API has the following methods:
 
-- GET /employee: List all the employees
-- GET /employee/id: List a single employee identified by its ID
-- POST /employee: Create a new employee
-- UPDATE /employee/id: Update an employee identified by its ID
-- DELETE /employee/id: Delete an employee identified by its ID
+- ```GET /employee```: List all the employees
+- ```GET /employee/id```: List a single employee identified by its ID
+- ```POST /employee```: Create a new employee
+- ```UPDATE /employee/id```: Update an employee identified by its ID
+- ```DELETE /employee/id```: Delete an employee identified by its ID
 
 Another great thing about Django Rest Framework is the creation of a beautiful 
 UI for the API. So, through the link http://localhost:8000/ we can have access
@@ -34,7 +34,7 @@ to the API in a friendly user interface.
 ## Admin
 
 The Django web framework automatically provides an administrator panel. The
-only thing that's necessary to do is to create the method __str__ within the
+only thing that's necessary to do is to create the method ```__str__``` within the
 model class in order to inform the Django how it should exhibit the objects on 
 the admin panel. To access the admin panel: http://localhost:8000/admin/
 
@@ -44,7 +44,7 @@ As it won't be uploaded in production, I didn't want to spend time dealing with
 database configs and I used the default database system that Django provides: 
 SQLite. But, for bigger applications that will be put in production, we need 
 to chose a more robust system and make sure that the databases credentials 
-will be stored in safety places like the operating system environment variables. 
+will be stored in safer places like the operating system environment variables. 
 
 ## Tests
 
